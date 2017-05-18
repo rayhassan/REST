@@ -1,0 +1,32 @@
+{
+        "description": "Docker-UCP-Manager",
+	"guest_os": "Centos7-TechSummit",
+	"memory_mb": 4096,
+	"name": "ucp-manager03",
+	"num_cores_per_vcpu": 2,
+	"num_vcpus": 1,
+	"vm_disks": [{
+		"disk_address": {
+			"device_bus": "ide",
+			"device_index": 0
+		},
+		"is_cdrom": true,
+		"is_empty": false,
+		"vm_disk_clone": {
+			"disk_address": {
+				"vmdisk_uuid": "2ec6918a-9cb1-487c-991d-5322dad5dee6"
+			}
+		}
+	}, {
+		"disk_address": {
+			"device_bus": "scsi",
+			"device_index": 0
+		},
+		"vm_disk_create": {
+			"storage_container_uuid": "2048afa6-a785-4aa8-b2b1-6124114ab91d",
+			"size": 10737418240
+		}
+	}],
+	"hypervisor_type": "ACROPOLIS",
+	"affinity": null
+}
